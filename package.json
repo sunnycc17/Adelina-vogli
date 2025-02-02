@@ -1,0 +1,22 @@
+{
+  "name": "adelina-vogli",
+  "version": "1.0.0",
+  "description": "webpage for the singer adelina vogli",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "tailwind": "npx tailwindcss -i ./src/input.css -o ./src/output.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sunnycc17/Adelina-vogli.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/sunnycc17/Adelina-vogli/issues"
+  },
+  "homepage": "https://github.com/sunnycc17/Adelina-vogli#readme"
+}
