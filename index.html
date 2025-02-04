@@ -3,6 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; frame-src https://www.youtube.com;"
+    />
+
+    <link rel="icon" href="/public/favicon.png" />
+
     <link rel="stylesheet" href="src/output.css" />
     <link
       href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
@@ -13,20 +20,24 @@
   <body class="bg-black text-white font-sans">
     <!-- 🌟 Hero Section -->
     <section
-      class="relative min-h-screen flex flex-col items-center justify-center text-center p-6"
+      class="relative min-h-screen flex flex-col items-center justify-center text-center p-6 sm:items-end sm:pr-52"
     >
+      <!-- Parallax Image -->
       <div
         id="parallax"
-        class="flex justify-center absolute top-0 left-0 w-full h-full opacity-40 backdrop-blur-md"
+        class="flex justify-center sm:justify-start absolute top-0 left-0 w-full h-full opacity-40 backdrop-blur-md"
       >
-        <img src="public/adelina1.webp" class="rounded-l-2xl object-fit" />
-        <img src="public/adelina2.webp" class="rounded-r-2xl object-fit" />
+        <img src="public/adelina2.webp" class="object-fit aspect-auto" />
       </div>
+
+      <!-- Text & Buttons -->
       <div
-        class="rounded-sm flex flex-col justify-center items-center relative z-10"
+        class="rounded-sm flex flex-col justify-end items-center sm:items-end relative z-10"
       >
-        <h1 class="text-5xl md:text-7xl font-extrabold">Adelina Vogli</h1>
-        <p class="text-lg text-gray-300 mt-4">
+        <h1 class="text-xl sm:text-5xl flex justify-end font-extrabold">
+          Adelina Vogli
+        </h1>
+        <p class="text-base text-gray-300 mt-4 sm:text-lg">
           Experience the voice. Feel the music
           <span class="text-red-400">live</span>.
         </p>
@@ -48,29 +59,30 @@
 
     <!-- 🎵 Featured Music -->
     <section class="text-center py-16">
-      <h2 class="text-4xl font-bold mb-6">A Versatile Singer</h2>
+      <h2 class="text-2xl sm:text-3xl font-bold mb-6">A Versatile Singer</h2>
       <p class="text-gray-400 mb-4">
-        Performing in greek, albanian and english.
+        Performing in Greek, Albanian, and English.
       </p>
-      <div class="flex items-center justify-center p-5 gap-5 m-5">
+
+      <div
+        class="flex flex-col sm:flex-row items-center justify-center gap-5 p-8"
+      >
         <iframe
-          width="560"
-          height="315"
+          class="w-full max-w-[560px] aspect-video"
           src="https://www.youtube.com/embed/_zE2lbo8EM4?si=3H5qTWHLWvCOuzk6"
           title="YouTube video player"
           frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allow="encrypted-media; gyroscope; picture-in-picture; web-share"
           referrerpolicy="strict-origin-when-cross-origin"
           allowfullscreen
         ></iframe>
 
         <iframe
-          width="560"
-          height="315"
+          class="w-full max-w-[560px] aspect-video"
           src="https://www.youtube.com/embed/eSjQkPB3J7A?si=QTnEM86lR4gj2lVA"
           title="YouTube video player"
           frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allow="encrypted-media; gyroscope; picture-in-picture; web-share"
           referrerpolicy="strict-origin-when-cross-origin"
           allowfullscreen
         ></iframe>
@@ -112,7 +124,7 @@
     <!-- 🔗 Social Media Links -->
     <footer class="py-10 text-center bg-black">
       <p class="text-lg text-gray-400 mb-4">Follow on Social Media</p>
-      <div class="flex justify-center gap-6 text-2xl">
+      <div class="flex justify-center gap-6 text-xl sm:text-2xl">
         <a
           target="_blank"
           href="https://www.facebook.com/adelina.vogli.5/"
