@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="/public/favicon.png" />
     <link rel="stylesheet" href="src/output.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+    />
+
     <title>Adelina Vogli</title>
   </head>
   <body class="bg-black text-white font-sans">
@@ -23,21 +28,32 @@
       <div
         class="rounded-sm flex flex-col justify-end items-center sm:items-end relative z-10"
       >
-        <h1 class="text-2xl sm:text-5xl flex justify-end font-extrabold">
+        <h1
+          data-aos="zoom-in"
+          class="text-2xl sm:text-5xl flex justify-end font-extrabold"
+        >
           Adelina Vogli
         </h1>
-        <p class="text-base text-gray-300 mt-4 sm:text-lg">
+        <p
+          data-aos="zoom-in"
+          data-aos-delay="300"
+          class="text-base text-gray-300 mt-4 sm:text-lg"
+        >
           Experience the voice. Feel the music
           <span class="text-red-400">live</span>.
         </p>
         <div class="mt-6 flex gap-4">
           <a
+            data-aos="fade-up"
+            data-aos-delay="400"
             target="_blank"
             href="https://www.youtube.com/@adelinavogli9361"
             class="px-6 py-3 bg-blue-900 hover:bg-blue-950 rounded-lg text-lg font-medium"
             >Listen Now</a
           >
           <a
+            data-aos="fade-up"
+            data-aos-delay="400"
             href="mailto:vogliadelina17@gmail.com"
             class="px-6 py-3 bg-gray-800 hover:bg-gray-700 rounded-lg text-lg font-medium"
             >Book Now</a
@@ -48,14 +64,20 @@
 
     <!-- 🎵 Featured Music -->
     <section class="text-center py-16">
-      <h2 class="text-2xl sm:text-3xl font-bold mb-6">A Versatile Singer</h2>
-      <p class="text-gray-400 mb-4">
+      <h2 data-aos="fade-up" class="text-2xl sm:text-3xl font-bold mb-6">
+        A Versatile Singer
+      </h2>
+      <p data-aos="fade-up" data-aos-delay="400" class="text-gray-400 mb-4">
         Performing in Greek, Albanian, and English.
       </p>
       <div
         class="flex flex-col sm:flex-row items-center justify-center gap-5 p-8"
       >
-        <div class="w-full max-w-[560px] aspect-video">
+        <div
+          data-aos="slide-left"
+          data-aos-delay="400"
+          class="w-full max-w-[560px] aspect-video"
+        >
           <iframe
             class="w-full h-full"
             src="https://www.youtube.com/embed/_zE2lbo8EM4?si=kuJClwazP_AxDu4f"
@@ -67,7 +89,11 @@
           ></iframe>
         </div>
 
-        <div class="w-full max-w-[560px] aspect-video">
+        <div
+          data-aos="slide-right"
+          data-aos-delay="400"
+          class="w-full max-w-[560px] aspect-video"
+        >
           <iframe
             class="w-full h-full"
             src="https://www.youtube.com/embed/eSjQkPB3J7A?si=8MgcDro_dmRYy_U_"
@@ -85,15 +111,15 @@
       <div
         class="flex flex-col items-center justify-center space-y-4 p-6 max-w-lg mx-auto text-center border border-gray-300"
       >
-        <p class="text-black text-lg font-medium">
+        <p data-aos="fade-up" class="text-black text-lg font-medium">
           With over 30 years of experience in music, Adelina Vogli is a dynamic
           performer known for her powerful voice and captivating stage presence.
         </p>
-        <p class="text-gray-700">
+        <p data-aos="fade-up" data-aos-delay="400" class="text-gray-700">
           From an early age, she has graced theater stages, bringing passion,
           artistry, and professionalism to every performance.
         </p>
-        <p class="text-gray-700">
+        <p data-aos="fade-up" data-aos-delay="500" class="text-gray-700">
           Specializing in <span class="font-semibold">live music only</span>,
           Adelina is the perfect choice for birthdays, clubs, and any event that
           deserves an unforgettable musical experience.
@@ -115,21 +141,29 @@
 
     <!-- 🔗 Social Media Links -->
     <footer class="py-10 text-center bg-black">
-      <p class="text-lg text-gray-400 mb-4">Follow on Social Media</p>
+      <p data-aos="zoom-in" class="text-lg text-gray-400 mb-4">
+        Follow on Social Media
+      </p>
       <div class="flex justify-center gap-6 text-xl sm:text-2xl">
         <a
+          data-aos="zoom-in"
+          data-aos-delay="400"
           target="_blank"
           href="https://www.facebook.com/adelina.vogli.5/"
           class="hover:text-blue-400"
           >Facebook</a
         >
         <a
+          data-aos="zoom-in"
+          data-aos-delay="500"
           target="_blank"
           href="https://www.instagram.com/adelinavogli/"
           class="hover:text-purple-200"
           >Instagram</a
         >
         <a
+          data-aos="zoom-in"
+          data-aos-delay="600"
           target="_blank"
           href="https://www.youtube.com/@adelinavogli9361"
           class="hover:text-red-500"
@@ -142,4 +176,13 @@
       <p class="text-yellow-100 text-sm mt-4">Developed with love by sunny.</p>
     </footer>
   </body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 600, // Animation duration in milliseconds (default: 400)
+      easing: "ease-in-out", // Animation easing type
+      delay: 200, // Delay before animation starts (in ms)
+      once: true, // Whether animation should happen only once
+    });
+  </script>
 </html>
